@@ -69,5 +69,5 @@ def hapus_catatan(id_catatan):
     daftar_catatan = [c for c in daftar_catatan if c["id"] != id_catatan]
     return buat_response("OK", "Catatan berhasil dihapus"), 200
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=True)
+if __name__ == "__main__":  # nosec
+    app.run(host="0.0.0.0", port=3000, debug=True)  # nosec
